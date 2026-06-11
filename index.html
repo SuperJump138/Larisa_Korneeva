@@ -16,9 +16,6 @@
  
 </head>
 <body>
-<button class="theme-switch" id="themeToggle" title="Переключить тему">
-    🌓
-</button>
 <!-- MOBILE NAV -->
 <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
   <button class="close-btn" onclick="closeMobileNav()" aria-label="Закрыть">×</button>
@@ -543,31 +540,6 @@
     if(e.key === 'ArrowLeft') { if(document.getElementById('lightbox').classList.contains('open')) lbPrev(); if(document.getElementById('certLightbox').classList.contains('open')) certLbPrev(); if(document.getElementById('quoteLightbox').classList.contains('open')) quoteLbPrev(); }
     if(e.key === 'ArrowRight') { if(document.getElementById('lightbox').classList.contains('open')) lbNext(); if(document.getElementById('certLightbox').classList.contains('open')) certLbNext(); if(document.getElementById('quoteLightbox').classList.contains('open')) quoteLbNext(); }
   });
-</script>
-<script>
-    (function() {
-        const toggle = document.getElementById('themeToggle');
-        const body = document.body;
-
-        // Проверка сохранённой темы
-        if (localStorage.getItem('theme') === 'dark') {
-            body.setAttribute('data-theme', 'dark');
-            toggle.textContent = '☀️';
-        }
-
-        // Переключение
-        toggle.addEventListener('click', () => {
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'light');
-                toggle.textContent = '🌓';
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-                toggle.textContent = '☀️';
-            }
-        });
-    })();
 </script>
 </body>
 </html>
