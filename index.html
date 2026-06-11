@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лариса Корнеева — владелец международных интеллектуальных клубов SJ по развитию личности через эмоциональный интеллект. Путь ежедневного роста, энергии и счастья. Присоединяйтесь к клубу Super Jump!">
+  <meta property="og:title" content="Лариса Корнеева — Интеллектуальный клуб Super Jump">
+  <meta property="og:description" content="Международный клуб SJ — ежедневное развитие личности, энергии и эмоционального интеллекта. Безопасное пространство поддержки и вдохновения на пути к совершенству.">
+  <meta property="og:type" content="website">
+  <title>Лариса Корнеева — Интеллектуальный клуб Super Jump</title>
+  <link rel="stylesheet" href="style.css"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="foto.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+  <button class="close-btn" onclick="closeMobileNav()" aria-label="Закрыть">×</button>
+  <a href="#about-me" onclick="closeMobileNav()">Обо мне</a>
+  <a href="#club" onclick="closeMobileNav()">Клуб SJ</a>
+  <a href="#gallery" onclick="closeMobileNav()">Галерея</a>
+  <a href="#videos" onclick="closeMobileNav()">Видео</a>
+  <a href="#certs" onclick="closeMobileNav()">Сертификаты</a>
+  <a href="#gifts" onclick="closeMobileNav()">Подарок</a>
+  <a href="#contacts" onclick="closeMobileNav()">Контакты</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <a href="#" class="logo-wrap">
+    <img src="logo.jpg" alt="Логотип Super Jump" onerror="this.style.display='none'">
+    <div class="logo-text">Лариса<br><span>Super Jump</span></div>
+  </a>
+  <nav aria-label="Основная навигация">
+    <a href="#about-me">Обо мне</a>
+    <a href="#club">Клуб SJ</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#videos">Видео</a>
+    <a href="#certs">Сертификаты</a>
+    <a href="#gifts">Подарок</a>
+    <a href="#contacts" class="header-cta">Связаться</a>
+  </nav>
+  <button class="burger" onclick="openMobileNav()" aria-label="Открыть меню">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero" aria-label="Главный экран">
+  <div class="hero-inner">
+    <!-- LEFT: text + buttons -->
+    <div class="hero-left fade-in">
+      <div class="hero-badge">🌿 Международный Интеллектуальный Клуб</div>
+      <h1>Лариса<br><em>Корнеева</em></h1>
+      <p class="hero-sub">Владелец международных интеллектуальных клубов по развитию личности через <strong>эмоциональный интеллект</strong></p>
+      <div class="hero-features">
+        <div class="hero-feat"><span class="feat-icon">🧠</span> Развитие эмоционального интеллекта</div>
+        <div class="hero-feat"><span class="feat-icon">⚡</span> Ежедневное увеличение энергии</div>
+        <div class="hero-feat"><span class="feat-icon">🌍</span> Онлайн — из любой точки мира</div>
+        <div class="hero-feat"><span class="feat-icon">👥</span> Сильное сообщество единомышленников</div>
+        <div class="hero-feat"><span class="feat-icon">🎯</span> Личный путь к совершенству</div>
+      </div>
+      <div class="hero-btns">
+        <a href="https://account.superjump.com/register/162356" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Вступить в клуб SJ
+        </a>
+        <a href="https://vk.com/larisa_intellekt" target="_blank" rel="noopener" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm3.08 13.56h-1.57c-.59 0-.77-.47-1.83-1.54-.92-.88-1.32-.99-1.55-.99-.31 0-.4.09-.4.52v1.41c0 .37-.12.59-1.12.59-1.65 0-3.48-1-4.77-2.86C5.57 10.9 5 9.37 5 8.99c0-.23.09-.44.52-.44h1.57c.39 0 .54.18.69.61.76 2.18 2.04 4.09 2.57 4.09.2 0 .29-.09.29-.59V10.6c-.06-1.07-.63-1.16-.63-1.54 0-.18.15-.37.39-.37h2.47c.33 0 .44.18.44.56v3c0 .33.15.44.24.44.2 0 .37-.11.74-.48 1.14-1.28 1.96-3.24 1.96-3.24.11-.23.29-.44.68-.44h1.57c.47 0 .57.24.47.56-.2.91-2.12 3.63-2.12 3.63-.17.27-.23.39 0 .69.17.23.73.71 1.1 1.14.68.76 1.2 1.4 1.34 1.84.15.44-.08.66-.54.66z"/></svg>
+          Написать ВКонтакте
+        </a>
+      </div>
+    </div>
+    <!-- RIGHT: photo -->
+    <div class="hero-right fade-in">
+      <div class="hero-photo-wrap">
+        <div class="hero-deco hero-deco-1"></div>
+        <div class="hero-deco hero-deco-2"></div>
+        <div class="hero-photo-card">
+          <img src="foto.jpg" alt="Лариса Корнеева — Интеллектуальный клуб Super Jump" onerror="this.style.background='linear-gradient(135deg,#d0faea,#d0f0fd)';this.style.minHeight='420px'">
+          <div class="hero-photo-badge">
+            <div class="dot"></div>
+            <span>Клуб SJ · Онлайн</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIPE -->
+<div class="stats-stripe">
+  <div class="stats-inner">
+    <div class="stat-item fade-in">
+      <div class="num">10+</div>
+      <div class="lbl">лет личностного роста</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="num">∞</div>
+      <div class="lbl">путь длиною в жизнь</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="num">100%</div>
+      <div class="lbl">онлайн, из любой точки мира</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT ME -->
+<section id="about-me" class="bg-alt">
+  <div class="section-inner">
+    <p class="section-label">Обо мне</p>
+    <div class="divider"></div>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <h2 class="section-title">Давайте познакомимся</h2>
+          <p><strong>Здравствуйте!</strong> Меня зовут <strong>Лариса Корнеева</strong>. Сегодня расскажу, как смогла вернуть себе энергию, здоровье и радость жизни — и как помогаю в этом другим.</p>
+            <p>У меня был опыт совсем из другой сферы — я работала на автотранспортном предприятии. Но жизнь привела меня в <strong>Super Jump</strong>, где я нашла своё настоящее призвание. Сейчас я помогаю людям раскрывать внутренние ресурсы через интеллектуальные тренировки.</p>
+            <div class="quote-block">
+                «Несколько лет назад моя жизнь выглядела совсем иначе. Четыре года я боролась с депрессией и серьёзными проблемами со здоровьем. Каждый день начинался с приёма 13 таблеток. Казалось, что это навсегда.»
+            </div>
+            <p>Всё изменилось, когда я пришла в <strong>“Super Jump”</strong>. Я начала проходить интеллектуальные тренировки, которые помогли мне иначе взглянуть на своё состояние. <strong>Уже через два месяца я смогла полностью отказаться от лекарств</strong> — это был невероятный прорыв!</p>
+            <p>Постепенно начали происходить и другие изменения: стал уходить лишний вес, появилась энергия, вернулся вкус к жизни. Я снова почувствовала себя сильной и способной помогать другим.</p>
+            <div class="divider"></div>
+            <p><strong>Теперь моя миссия</strong> — помогать другим находить в себе те же ресурсы, которые открыла я. Я верю, что эмоциональный интеллект и внутренняя энергия способны менять жизнь к лучшему. Именно это мы и развиваем в наших интеллект‑клубах.</p>
+            <p>Если вы чувствуете усталость, нехватку сил или хотите научиться лучше управлять своими эмоциями, <strong>я готова вам помочь</strong>. Мои занятия — это не просто теория, а конкретные практики, которые работают.</p>
+        <div style="margin-top:24px;">
+          <a href="https://account.superjump.com/register/162356" target="_blank" rel="noopener" class="btn-primary">Начать путь со мной</a>
+        </div>
+      </div>
+      <div class="success-card fade-in">
+        <h3>Формула успеха</h3>
+        <p style="font-size:0.9rem;color:#4a6358;margin-bottom:20px;">Успех состоит из трёх ключевых компонентов:</p>
+        <div class="success-items">
+          <div class="success-item">
+            <div class="success-pct">10%</div>
+            <div>
+              <div class="success-label">Знания</div>
+              <div style="font-size:0.82rem;color:#4a6358;">Информация и навыки</div>
+            </div>
+          </div>
+          <div class="success-item">
+            <div class="success-pct">40%</div>
+            <div>
+              <div class="success-label">Состояние</div>
+              <div style="font-size:0.82rem;color:#4a6358;">Энергия и эмоции</div>
+            </div>
+          </div>
+          <div class="success-item">
+            <div class="success-pct">50%</div>
+            <div>
+              <div class="success-label">Окружение</div>
+              <div style="font-size:0.82rem;color:#4a6358;">Люди рядом с вами</div>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:20px;font-size:0.88rem;color:#4a6358;font-style:italic;">В Клубе SJ мы работаем над всеми тремя составляющими одновременно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLUB SECTION -->
+<section id="club">
+  <div class="section-inner">
+    <p class="section-label text-center">Интеллектуальный клуб</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Клуб SJ — путь к совершенству</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 40px;">Мы объединились, чтобы ежедневно поддерживать и вдохновлять друг друга на пути к совершенству. Это территория, где безопасно, комфортно и нет конкурентов.</p>
+    <div class="club-cards">
+      <div class="club-card fade-in">
+        <span class="icon">🧠</span>
+        <h3>Эмоциональный интеллект</h3>
+        <p>Развиваем ЭИ как ключевой инструмент управления жизнью, отношениями и результатами</p>
+      </div>
+      <div class="club-card fade-in">
+        <span class="icon">⚡</span>
+        <h3>Энергия каждый день</h3>
+        <p>Ежедневные практики для поддержания высокого уровня жизненной энергии и мотивации</p>
+      </div>
+      <div class="club-card fade-in">
+        <span class="icon">👥</span>
+        <h3>Сильное сообщество</h3>
+        <p>Пространство, где мы все можем быть полезны друг другу — без конкуренции, с поддержкой</p>
+      </div>
+      <div class="club-card fade-in">
+        <span class="icon">🌍</span>
+        <h3>Онлайн без границ</h3>
+        <p>Участвуйте из любой точки мира. Международный клуб с участниками по всему земному шару</p>
+      </div>
+      <div class="club-card fade-in">
+        <span class="icon">🎯</span>
+        <h3>Личностный рост</h3>
+        <p>Путь ежедневного развития личности длиною в жизнь. Каждый день лучше, чем вчера</p>
+      </div>
+      <div class="club-card fade-in">
+        <span class="icon">❤️</span>
+        <h3>Счастье изнутри</h3>
+        <p>Помогаем найти своё счастье, гармонию в семье и смысл жизни через работу с собой</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="bg-alt">
+  <div class="section-inner">
+    <p class="section-label text-center">Фотогалерея</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Жизнь в клубе SJ</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 32px;">Моменты радости, роста и вдохновения вместе с командой Super Jump</p>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in" onclick="openLightbox(0)">
+        <img src="foto1.jpg" alt="Лариса Корнеева, Владимир Довгань и Пер Силкин — фото 1" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(1)">
+        <img src="foto2.jpg" alt="Лариса Корнеева и Екатерина Золотарева — фото 2" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(2)">
+        <img src="foto3.jpg" alt="Конгресс Super Jump в Батуми — фото 3" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(3)">
+        <img src="foto4.jpg" alt="Команда Super Jump — фото 4" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(4)">
+        <img src="foto5.jpg" alt="Лариса — фото 5" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(5)">
+        <img src="foto6.jpg" alt="Клуб SJ Батуми — фото 6" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(6)">
+        <img src="foto7.jpg" alt="Super Jump — фото 7" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(7)">
+        <img src="foto8.jpg" alt="Лариса Корнеева — фото 8" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Просмотр фото">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="Закрыть">×</button>
+  <button class="lb-arrow lb-prev" onclick="lbPrev()" aria-label="Предыдущее">&#8249;</button>
+  <img src="" alt="Фото" id="lbImg">
+  <button class="lb-arrow lb-next" onclick="lbNext()" aria-label="Следующее">&#8250;</button>
+</div>
+
+<!-- VIDEOS FROM NATALI & TEAM -->
+<section id="videos">
+  <div class="section-inner">
+    <p class="section-label text-center">Видео</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Видео от Ларисы и команды Super Jump</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 32px;">Смотрите вдохновляющие видео о нашем клубе и методах личностного роста</p>
+    <div class="videos-grid">
+      <div class="video-card fade-in">
+        <iframe src="vid1.mp4"autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видео от Ларисы Super Jump 1"></iframe>
+        <div class="vid-label">✨ Моё интервью</div>
+      </div>
+      <div class="video-card fade-in">
+        <iframe src="vid2.mp4" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видео от Ларисы Super Jump 2"></iframe>
+        <div class="vid-label">✨ Торжественное вручение значка 3 ранга</div>
+      </div>
+      <div class="video-card fade-in">
+        <iframe src="vid3.mp4" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видео от Ларисы Super Jump 3"></iframe>
+        <div class="vid-label">⚡ Атмосфера в команде</div>
+      </div>
+      <div class="video-card fade-in">
+        <iframe src="vid4.mp4" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видео от Ларисы Super Jump 4"></iframe>
+        <div class="vid-label">❤️ Компас энергии</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certs" class="bg-alt">
+  <div class="section-inner">
+    <p class="section-label text-center">Квалификация</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Сертификаты</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 32px;">Подтверждённая квалификация и профессиональные достижения Ларисы Корнеевой</p>
+    <div class="certs-slider-wrap">
+      <div class="certs-track" id="certsTrack">
+        <div class="cert-card" onclick="openLightboxCert(0)">
+          <img src="cert1.jpg" alt="Сертификат 1" loading="lazy">
+        </div>
+        <div class="cert-card" onclick="openLightboxCert(1)">
+          <img src="cert2.jpg" alt="Сертификат 2" loading="lazy">
+        </div>
+        <div class="cert-card" onclick="openLightboxCert(2)">
+          <img src="cert3.jpg" alt="Сертификат 3" loading="lazy">
+        </div>
+        <div class="cert-card" onclick="openLightboxCert(3)">
+          <img src="cert4.jpg" alt="Сертификат 4" loading="lazy">
+        </div>
+        <div class="cert-card" onclick="openLightboxCert(4)">
+          <img src="cert5.jpg" alt="Сертификат 5" loading="lazy">
+        </div>
+        <div class="cert-card" onclick="openLightboxCert(5)">
+          <img src="cert6.jpg" alt="Сертификат 6" loading="lazy">
+        </div>
+        <div class="cert-card" onclick="openLightboxCert(6)">
+          <img src="cert7.jpg" alt="Сертификат 7" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="slider-arrows">
+      <button class="s-arrow" onclick="scrollCerts(-1)" aria-label="Назад">&#8249;</button>
+      <button class="s-arrow" onclick="scrollCerts(1)" aria-label="Вперёд">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- CERT LIGHTBOX -->
+<div class="lightbox" id="certLightbox" role="dialog" aria-label="Просмотр сертификата">
+  <button class="lb-close" onclick="closeCertLightbox()" aria-label="Закрыть">×</button>
+  <button class="lb-arrow lb-prev" onclick="certLbPrev()" aria-label="Предыдущий">&#8249;</button>
+  <img src="" alt="Сертификат" id="certLbImg">
+  <button class="lb-arrow lb-next" onclick="certLbNext()" aria-label="Следующий">&#8250;</button>
+</div>
+
+<!-- QUOTES -->
+<section id="quotes">
+  <div class="section-inner">
+    <p class="section-label text-center">Вдохновение</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Цитаты для вдохновения</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 32px;">Слова, которые помогают двигаться вперёд каждый день</p>
+    <div class="quotes-grid">
+      <div class="quote-card fade-in" onclick="openLightboxQuote(0)">
+        <img src="ct1.jpg" alt="Вдохновляющая цитата 1" loading="lazy">
+      </div>
+      <div class="quote-card fade-in" onclick="openLightboxQuote(1)">
+        <img src="ct2.jpg" alt="Вдохновляющая цитата 2" loading="lazy">
+      </div>
+      <div class="quote-card fade-in" onclick="openLightboxQuote(2)">
+        <img src="ct3.jpg" alt="Вдохновляющая цитата 3" loading="lazy">
+      </div>
+      <div class="quote-card fade-in" onclick="openLightboxQuote(3)">
+        <img src="ct4.jpg" alt="Вдохновляющая цитата 4" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE LIGHTBOX -->
+<div class="lightbox" id="quoteLightbox" role="dialog" aria-label="Просмотр цитаты">
+  <button class="lb-close" onclick="closeQuoteLightbox()" aria-label="Закрыть">×</button>
+  <button class="lb-arrow lb-prev" onclick="quoteLbPrev()" aria-label="Предыдущая">&#8249;</button>
+  <img src="" alt="Цитата" id="quoteLbImg">
+  <button class="lb-arrow lb-next" onclick="quoteLbNext()" aria-label="Следующая">&#8250;</button>
+</div>
+
+<!-- GIFTS: BOOK -->
+<section id="gifts" class="bg-alt">
+  <div class="section-inner">
+    <p class="section-label text-center">🎁 Подарок</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Подарок для вас</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 40px;">Бесплатная книга, которой я сама пользуюсь каждый день</p>
+    <div class="practice-wrap">
+      <div class="book-card fade-in">
+        <img src="book.jpg" alt="Книга — подарок от Ларисы Корнеевой" onerror="this.style.display='none'">
+        <h3>📚 Книга в подарок</h3>
+        <p>Скачайте бесплатно — узнайте, как изменить жизнь через развитие личности и эмоционального интеллекта с Super Jump</p>
+        <a href="kniga.pdf" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          Скачать книгу бесплатно
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <p class="section-label text-center">Отзывы</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Видеоотзывы участников</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 32px;">Реальные истории людей, изменивших свою жизнь вместе с клубом Super Jump</p>
+    <div class="test-grid">
+      <div class="test-card fade-in">
+        <iframe src="otz1.mp4" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видеоотзыв 1"></iframe>
+      </div>
+      <div class="test-card fade-in">
+        <iframe src="otz2.mp4" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видеоотзыв 2"></iframe>
+      </div>
+      <div class="test-card fade-in">
+        <iframe src="otz3.mp4" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видеоотзыв 3"></iframe>
+      </div>
+      <div class="test-card fade-in">
+        <iframe src="otz4.mp4" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Видеоотзыв 4"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="section-inner">
+    <div class="cta-inner fade-in">
+      <h2>Готовы начать путь к счастливой жизни?</h2>
+      <p>Присоединяйтесь к международному интеллектуальному клубу SJ. Ежедневное развитие, поддержка сообщества и путь к совершенству — длиною в жизнь.</p>
+      <div class="cta-btns">
+        <a href="https://account.superjump.com/register/162356" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Вступить в клуб SJ
+        </a>
+        <a href="tel:+79641036196" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Позвонить
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="section-inner">
+    <p class="section-label text-center">Контакты</p>
+    <div class="divider center"></div>
+    <h2 class="section-title text-center">Свяжитесь со мной</h2>
+    <p class="section-desc text-center" style="margin: 0 auto 32px;">Выберите удобный способ связи — я отвечу как можно скорее</p>
+    <div class="contacts-grid">
+      <a href="https://account.superjump.com/register/162356" target="_blank" rel="noopener" class="contact-card">
+        <div class="c-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="c-label">Регистрация</div>
+        <div class="c-val">Вступить в клуб SJ</div>
+      </a>
+      <a href="https://vk.com/larisa_intellekt" target="_blank" rel="noopener" class="contact-card">
+        <div class="c-icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm3.08 13.56h-1.57c-.59 0-.77-.47-1.83-1.54-.92-.88-1.32-.99-1.55-.99-.31 0-.4.09-.4.52v1.41c0 .37-.12.59-1.12.59-1.65 0-3.48-1-4.77-2.86C5.57 10.9 5 9.37 5 8.99c0-.23.09-.44.52-.44h1.57c.39 0 .54.18.69.61.76 2.18 2.04 4.09 2.57 4.09.2 0 .29-.09.29-.59V10.6c-.06-1.07-.63-1.16-.63-1.54 0-.18.15-.37.39-.37h2.47c.33 0 .44.18.44.56v3c0 .33.15.44.24.44.2 0 .37-.11.74-.48 1.14-1.28 1.96-3.24 1.96-3.24.11-.23.29-.44.68-.44h1.57c.47 0 .57.24.47.56-.2.91-2.12 3.63-2.12 3.63-.17.27-.23.39 0 .69.17.23.73.71 1.1 1.14.68.76 1.2 1.4 1.34 1.84.15.44-.08.66-.54.66z"/></svg>
+        </div>
+        <div class="c-label">ВКонтакте</div>
+        <div class="c-val">Лариса Корнеева</div>
+      </a>
+      <a href="https://t.me/Larisa_Korneeva_trener" target="_blank" rel="noopener" class="contact-card">
+        <div class="c-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffcc00">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-0.15 1.58-0.8 5.42-1.13 7.19-0.14 0.75-0.42 1-0.68 1.03-0.58 0.05-1.02-0.38-1.58-0.75-0.88-0.58-1.38-0.94-2.23-1.5-0.99-0.65-0.35-1.01 0.22-1.59 0.15-0.15 2.71-2.48 2.76-2.69 0.01-0.04 0.01-0.19-0.07-0.27-0.08-0.08-0.2-0.05-0.29-0.03-0.12 0.02-2.05 1.3-2.89 1.83-0.29 0.19-0.55 0.28-0.79 0.28-0.26 0-0.68-0.13-1.01-0.24-0.42-0.14-0.82-0.22-0.79-0.47 0.02-0.13 0.2-0.26 0.54-0.39 2.02-0.88 3.37-1.46 4.05-1.74 1.93-0.8 2.33-0.94 2.59-0.94 0.06 0 0.19 0.01 0.28 0.08 0.07 0.06 0.09 0.14 0.1 0.18 0.01 0.04 0 0.09-0.01 0.14-0.01 0.05-0.38 2.26-0.57 3.1z"/>
+</svg>
+        </div>
+        <div class="c-label">Telegram</div>
+        <div class="c-val"> @Larisa_Korneeva_trener </div>
+      </a>
+      <a href="tel:+79641036196" class="contact-card">
+        <div class="c-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="c-label">Телефон</div>
+        <div class="c-val">+7 (964) 103-61-96</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Лариса Корнеева · Super Jump</div>
+  <p style="margin-bottom:10px;">Международный интеллектуальный клуб развития личности через эмоциональный интеллект</p>
+  <p>
+    <a href="https://vk.com/larisa_intellekt" target="_blank" rel="noopener">ВКонтакте</a> &nbsp;|&nbsp;
+    <a href="https://t.me/Larisa_Korneeva_trener" rel="noopener">Telegram</a> &nbsp;|&nbsp;
+    <a href="https://account.superjump.com/register/162356" target="_blank" rel="noopener">Вступить в клуб</a>
+  </p>
+  <p style="margin-top:16px;font-size:0.78rem;opacity:0.6;">© 2026 Клуб SJ · Лариса Корнеева · Все права защищены</p>
+</footer>
+
+<!-- FLOATING Telegram -->
+<a href="https://t.me/Larisa_Korneeva_trener" target="_blank" rel="noopener" class="fab-wa" aria-label="Telegram">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffcc00">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-0.15 1.58-0.8 5.42-1.13 7.19-0.14 0.75-0.42 1-0.68 1.03-0.58 0.05-1.02-0.38-1.58-0.75-0.88-0.58-1.38-0.94-2.23-1.5-0.99-0.65-0.35-1.01 0.22-1.59 0.15-0.15 2.71-2.48 2.76-2.69 0.01-0.04 0.01-0.19-0.07-0.27-0.08-0.08-0.2-0.05-0.29-0.03-0.12 0.02-2.05 1.3-2.89 1.83-0.29 0.19-0.55 0.28-0.79 0.28-0.26 0-0.68-0.13-1.01-0.24-0.42-0.14-0.82-0.22-0.79-0.47 0.02-0.13 0.2-0.26 0.54-0.39 2.02-0.88 3.37-1.46 4.05-1.74 1.93-0.8 2.33-0.94 2.59-0.94 0.06 0 0.19 0.01 0.28 0.08 0.07 0.06 0.09 0.14 0.1 0.18 0.01 0.04 0 0.09-0.01 0.14-0.01 0.05-0.38 2.26-0.57 3.1z"/>
+</svg>
+</a>
+<script>
+  // ── MOBILE NAV ──
+  function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); document.body.style.overflow=''; }
+
+  // ── FADE IN ON SCROLL ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ── GALLERY LIGHTBOX ──
+  const galleryImgs = ['img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6.jpg','img/7.jpg','img/8.jpg','img/9.jpg','img/10.jpg'];
+  let lbIdx = 0;
+  function openLightbox(i) { lbIdx = i; document.getElementById('lbImg').src = galleryImgs[i]; document.getElementById('lightbox').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
+  function lbPrev() { lbIdx = (lbIdx - 1 + galleryImgs.length) % galleryImgs.length; document.getElementById('lbImg').src = galleryImgs[lbIdx]; }
+  function lbNext() { lbIdx = (lbIdx + 1) % galleryImgs.length; document.getElementById('lbImg').src = galleryImgs[lbIdx]; }
+  document.getElementById('lightbox').addEventListener('click', function(e){ if(e.target===this) closeLightbox(); });
+
+  // ── CERT LIGHTBOX ──
+  const certImgs = ['img/cert_1.jpg','img/cert_2.jpg','img/cert_3.jpg','img/cert_4.jpg','img/cert_5.jpg','img/cert_6.jpg','img/cert_7.jpg'];
+  let certIdx = 0;
+  function openLightboxCert(i) { certIdx = i; document.getElementById('certLbImg').src = certImgs[i]; document.getElementById('certLightbox').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeCertLightbox() { document.getElementById('certLightbox').classList.remove('open'); document.body.style.overflow=''; }
+  function certLbPrev() { certIdx = (certIdx - 1 + certImgs.length) % certImgs.length; document.getElementById('certLbImg').src = certImgs[certIdx]; }
+  function certLbNext() { certIdx = (certIdx + 1) % certImgs.length; document.getElementById('certLbImg').src = certImgs[certIdx]; }
+  document.getElementById('certLightbox').addEventListener('click', function(e){ if(e.target===this) closeCertLightbox(); });
+
+  // ── QUOTE LIGHTBOX ──
+  const quoteImgs = ['img/quote_1.jpg','img/quote_2.jpg','img/quote_3.jpg','img/quote_4.jpg'];
+  let qIdx = 0;
+  function openLightboxQuote(i) { qIdx = i; document.getElementById('quoteLbImg').src = quoteImgs[i]; document.getElementById('quoteLightbox').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeQuoteLightbox() { document.getElementById('quoteLightbox').classList.remove('open'); document.body.style.overflow=''; }
+  function quoteLbPrev() { qIdx = (qIdx - 1 + quoteImgs.length) % quoteImgs.length; document.getElementById('quoteLbImg').src = quoteImgs[qIdx]; }
+  function quoteLbNext() { qIdx = (qIdx + 1) % quoteImgs.length; document.getElementById('quoteLbImg').src = quoteImgs[qIdx]; }
+  document.getElementById('quoteLightbox').addEventListener('click', function(e){ if(e.target===this) closeQuoteLightbox(); });
+
+  // ── CERTS SLIDER ──
+  function scrollCerts(dir) {
+    const track = document.getElementById('certsTrack');
+    const cardW = track.querySelector('.cert-card').offsetWidth + 16;
+    track.scrollBy({ left: dir * cardW * 2, behavior: 'smooth' });
+  }
+
+  // ── KEYBOARD ESC for all lightboxes ──
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') { closeLightbox(); closeCertLightbox(); closeQuoteLightbox(); closeMobileNav(); }
+    if(e.key === 'ArrowLeft') { if(document.getElementById('lightbox').classList.contains('open')) lbPrev(); if(document.getElementById('certLightbox').classList.contains('open')) certLbPrev(); if(document.getElementById('quoteLightbox').classList.contains('open')) quoteLbPrev(); }
+    if(e.key === 'ArrowRight') { if(document.getElementById('lightbox').classList.contains('open')) lbNext(); if(document.getElementById('certLightbox').classList.contains('open')) certLbNext(); if(document.getElementById('quoteLightbox').classList.contains('open')) quoteLbNext(); }
+  });
+</script>
+
+</body>
+</html>
